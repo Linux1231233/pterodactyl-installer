@@ -33,6 +33,10 @@ sed -i "s/.*SCRIPT_RELEASE=.*/SCRIPT_RELEASE=\"$RELEASE\"/" install-wings.sh
 # install.sh
 sed -i "s/.*SCRIPT_VERSION=.*/SCRIPT_VERSION=\"$RELEASE\"/" install.sh
 
+# install-phpmyadmin.sh
+
+sed -i "s/.*SCRIPT_RELEASE=.*/SCRIPT_RELEASE=\"$RELEASE\"/" install-phpmyadmin.sh
+
 output "Commit release"
 
 git add .

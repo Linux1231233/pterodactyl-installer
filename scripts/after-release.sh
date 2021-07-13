@@ -14,6 +14,9 @@ sed -i "s/.*SCRIPT_RELEASE=.*/SCRIPT_RELEASE=\"canary\"/" install-panel.sh
 sed -i "s/.*GITHUB_SOURCE=.*/GITHUB_SOURCE=\"master\"/" install-wings.sh
 sed -i "s/.*SCRIPT_RELEASE=.*/SCRIPT_RELEASE=\"canary\"/" install-wings.sh
 
+# install-phpmyadmin.sh
+sed -i "s/.*SCRIPT_RELEASE=.*/SCRIPT_RELEASE=\"canary\"/" install-phpmyadmin.sh
+
 output "Commit changes"
 
 git add .
